@@ -64,6 +64,9 @@ export type VideoInfo = {
    * List of playback text tracks
    */
   textTracks: Track[];
+
+
+  chapters: any[];
 };
 
 type OnPlayingEventProps = Pick<VideoInfo, "duration" | "target"> & {
