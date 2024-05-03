@@ -329,6 +329,12 @@ static NSString *const playbackRate = @"rate";
         }
         info[@"textTracks"] = tracks;
     }
+
+		if(_player.numberOfChaptersForTitle() > 1) {
+				NSMutableArray *chapters = _player.chapterDescriptionsOfTitle();
+				info[@"chapters"] = tracks;
+		}
+
     return info;
 }
 
