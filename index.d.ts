@@ -67,6 +67,8 @@ export type VideoInfo = {
 
 
   chapters: any[];
+
+  info: number;
 };
 
 type OnPlayingEventProps = Pick<VideoInfo, "duration" | "target"> & {
