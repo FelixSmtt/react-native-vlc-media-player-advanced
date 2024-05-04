@@ -23,15 +23,15 @@ Play MKV, multiple audio tracks (including 5.1), and subtitles tracks (including
 
 Run
 
-`npm i react-native-vlc-media-player --save`
+`npm i https://github.com/FelixSmtt/react-native-vlc-media-player-advanced.git --save`
 
 or
 
-`yarn add react-native-vlc-media-player`
+`yarn add https://github.com/FelixSmtt/react-native-vlc-media-player-advanced.git`
 
 Run
 
-`react-native link react-native-vlc-media-player`
+`react-native link https://github.com/FelixSmtt/react-native-vlc-media-player-advanced.git`
 
 ## android
 
@@ -200,6 +200,7 @@ VideoInfo example:
         {id: 4, name: "Track 1 - [English]"},
         {id: 5, name: "Track 2 - [Japanese]"}
     ],
+    chapters: []
 }
 ```
 
