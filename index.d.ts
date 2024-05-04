@@ -37,6 +37,19 @@ export type Track = {
 };
 
 /**
+ * Represents a chapter type in playback
+ */
+export type Chapter = {
+
+  VLCChapterDescriptionDuration: number;
+
+  VLCChapterDescriptionName: string;
+
+  VLCChapterDescriptionTimeOffset: number;
+
+};
+
+/**
  * Represents a full playback information
  */
 export type VideoInfo = {
@@ -66,9 +79,7 @@ export type VideoInfo = {
   textTracks: Track[];
 
 
-  chapters: any[];
-
-  info: number;
+  chapters?: Chapter[];
 };
 
 type OnPlayingEventProps = Pick<VideoInfo, "duration" | "target"> & {

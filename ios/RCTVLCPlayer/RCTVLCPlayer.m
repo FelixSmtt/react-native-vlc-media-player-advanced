@@ -337,8 +337,6 @@ static NSString *const playbackRate = @"rate";
         info[@"chapters"] = chapters;
     }
 
-    info[@"test"] = _player.media.length.value;
-
     return info;
 }
 
