@@ -332,10 +332,12 @@ static NSString *const playbackRate = @"rate";
     }
     
     int titleIndex = _player.currentTitleIndex;
-    if([_player numberOfChaptersForTitle:titleIndex] > 1) {
+    if([_player numberOfChaptersForTitle:titleIndex] > 0) {
         NSMutableArray *chapters = [_player chapterDescriptionsOfTitle:titleIndex];
         info[@"chapters"] = chapters;
     }
+
+    info[@"test"] = _player.media.length.value;
 
     return info;
 }
