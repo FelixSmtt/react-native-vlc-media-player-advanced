@@ -1,6 +1,7 @@
 #import "React/RCTConvert.h"
 #import "RCTVLCPlayer.h"
 #import "React/RCTBridgeModule.h"
+//#import <React/RCTBridgeModule.h>
 #import "React/RCTEventDispatcher.h"
 #import "React/UIView+React.h"
 #if TARGET_OS_TV
@@ -329,12 +330,6 @@ static NSString *const playbackRate = @"rate";
         }
         info[@"textTracks"] = tracks;
     }
-    /*
-    int titleIndex = _player.currentTitleIndex;
-    if([_player numberOfChaptersForTitle:titleIndex] > 1) {
-        NSMutableArray *chapters = [_player chapterDescriptionsOfTitle:titleIndex];
-        info[@"chapters"] = chapters;
-    }*/
 
     return info;
 }
